@@ -1,4 +1,6 @@
 module helloApp {
+    'use strict'; 
+
     export class HelloNgTypeScriptCtrl {
         message: string
         

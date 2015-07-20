@@ -1,11 +1,15 @@
 module helloApp {
+    'use strict';
+
     export class HelloNgTypeScriptService {
+        message:string
+
         constructor() {
-            console.log (' Hello Ng TypeScript Service');
+            this.message = "Hello, ng TypeScript";
         }
         
         public getHelloMessage() : string {
-            return "Hello, ng TypeScript";
+            return this.message;
         }
     }
 }

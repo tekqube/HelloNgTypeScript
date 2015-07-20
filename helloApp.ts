@@ -5,6 +5,7 @@ module helloApp {
 
     myapp.controller('ctrl', HelloNgTypeScriptCtrl);
     myapp.service('helloNgTypeScriptService', HelloNgTypeScriptService);
+    myapp.directive('helloNgTypeScriptDirective', () => new HelloNgTypeScriptDirective());
     
     myapp.config(['$routeProvider', function($routeProvider: ng.route.IRouteProvider) {
         $routeProvider.when('/', {templateUrl: 'hello.html'}).
